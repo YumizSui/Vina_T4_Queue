@@ -38,6 +38,8 @@ $ADFR_DIR/prepare_receptor -r ./test/receptor.pdb -o ./test/receptor.pdbqt
 Split multi-molecule mol2 files into individual mol2 files:
 
 ```bash
+gzip -d ./test/actives_final.mol2.gz
+gzip -d ./test/decoys_final.mol2.gz
 python ./src/split_mol2.py --input_file ./test/actives_final.mol2 --output_dir ./test/mol2 --prefix actives_final_
 python ./src/split_mol2.py --input_file ./test/decoys_final.mol2 --output_dir ./test/mol2 --prefix decoys_final_
 ```
