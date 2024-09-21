@@ -1,0 +1,2 @@
+REC_FILE,CONFIG_FILE,INPUT_DIR,OUTPUT_DIR,status
+test/receptor.pdbqt,test/input.txt,test/pdbqt,test/docked,pending
